@@ -294,6 +294,21 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
 .page-hero h1 { color: var(--white); margin-bottom: 12px; }
 .page-hero p { color: rgba(255,255,255,0.75); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
 
+.page-hero-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 120px 0 100px;
+}
+.page-hero-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+.page-hero-img .container { position: relative; z-index: 1; }
+
 /* ===========================
    INTRO BAND
    =========================== */
