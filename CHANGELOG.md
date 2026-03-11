@@ -38,6 +38,38 @@
 **6. "Who We Are" section removed (index.html)**
 - Removed the intro band section: "eXCELence in Entertainment & Craftsmanship" with side image
 
+**7. Trust bar — Replaced items with brand tagline (index.html)**
+- Removed: Free Estimates, 5-Star Rated, Treasure Valley Based, Licensed & Insured, Family Owned
+- Replaced with: "Let Your Entertainment Space XCEL" centered on the blue bar
+
+**8. Contracting page — Renamed to Commercial**
+- `contracting.html` renamed to `commercial.html`
+- Page title and hero heading updated to "Commercial Services"
+- Removed "Why Xcel / One Call. Total Project Management." intro section
+- Secret hidden dot link on homepage updated to point to `commercial.html`
+
+**9. Nav — Removed Contracting/Commercial link from all pages**
+- Contracting/Commercial removed from visible nav on all 5 pages
+- Added a secret hidden dot link just above the footer on the homepage as the only access point to the commercial page
+
+**10. Nav — "Serving the Treasure Valley" moved inline**
+- Removed the separate top strip
+- Tagline now sits centered between the logo and nav links on the same row
+- Hidden on mobile screens to keep the hamburger menu clean
+
+**11. Hero (index.html) — Removed "Get a Free Estimate" button**
+- Removed the blue "Get a Free Estimate" CTA button from the hero section
+- "See Our Work" button remains
+
+**12. Nav — "Get a Quote" renamed to "Contact Us" on all pages**
+- Updated nav button label across all 5 pages
+
+---
+
+## Deploy Notes
+- All changes are pushed to GitHub (`Motor1G/xcel-contracting`) and auto-deployed via Netlify
+- Live site: https://xcelcontracting.com
+
 ---
 
 ## How to Deploy to Netlify
