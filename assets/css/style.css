@@ -160,13 +160,6 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
-.nav-topbar {
-  background: var(--white);
-  border-bottom: 1px solid var(--grey-mid);
-  padding: 6px 0;
-  text-align: center;
-}
-
 .nav-tagline {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.75rem;
@@ -174,6 +167,8 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--blue);
+  flex: 1;
+  text-align: center;
 }
 
 .nav-inner {
@@ -851,8 +846,10 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
 }
 
 @media (max-width: 768px) {
-  .nav-links { 
-    display: none; 
+  .nav-tagline { display: none; }
+
+  .nav-links {
+    display: none;
     position: fixed;
     top: 72px;
     left: 0;
