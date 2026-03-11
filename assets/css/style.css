@@ -160,6 +160,22 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
+.nav-topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--grey-mid);
+  padding: 6px 0;
+  text-align: center;
+}
+
+.nav-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
@@ -731,65 +747,23 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
    FOOTER
    =========================== */
 .footer {
-  background: var(--charcoal);
-  color: rgba(255,255,255,0.75);
-  padding: 60px 0 28px;
+  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+  padding: 48px 0;
+  text-align: center;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 48px;
-  margin-bottom: 48px;
-}
-
-.footer-brand img {
-  height: 44px;
-  margin-bottom: 16px;
-  filter: brightness(1.1);
-}
-.footer-brand p { font-size: 0.9rem; max-width: 280px; margin-bottom: 20px; }
-
-.footer-contact-list { display: flex; flex-direction: column; gap: 10px; }
-.footer-contact-list a {
-  color: rgba(255,255,255,0.75);
-  font-size: 0.9rem;
-  transition: color var(--transition);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.footer-contact-list a:hover { color: #90CAF9; }
-
-.footer-nav h5 {
+.footer-tagline {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
   color: var(--white);
-  margin-bottom: 16px;
+  margin: 0;
+  letter-spacing: 1px;
 }
-.footer-nav ul { display: flex; flex-direction: column; gap: 8px; }
-.footer-nav a {
-  color: rgba(255,255,255,0.7);
-  font-size: 0.9rem;
-  transition: color var(--transition);
-}
-.footer-nav a:hover { color: #90CAF9; }
 
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  padding-top: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.82rem;
-  flex-wrap: wrap;
-  gap: 8px;
+.footer-accent {
+  color: #90CAF9;
 }
-.footer-bottom a { color: rgba(255,255,255,0.6); }
-.footer-bottom a:hover { color: #90CAF9; }
 
 /* ===========================
    PROCESS STEPS
@@ -896,8 +870,6 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
   .quote-form-card { padding: 28px; }
   .form-row { grid-template-columns: 1fr; }
 
-  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-  .footer-bottom { flex-direction: column; text-align: center; }
 
   .ai-features-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; }
