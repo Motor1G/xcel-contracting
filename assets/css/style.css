@@ -744,6 +744,26 @@ p { margin-bottom: 1rem; color: var(--charcoal-light); }
 }
 
 /* ===========================
+   SECRET LINK
+   =========================== */
+.secret-link-wrap {
+  text-align: center;
+  padding: 8px 0;
+  background: var(--white);
+}
+.secret-link {
+  font-size: 0.5rem;
+  color: rgba(255,255,255,0.08);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+.secret-link:hover {
+  color: rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+/* ===========================
    FOOTER
    =========================== */
 .footer {
