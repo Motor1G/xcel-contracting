@@ -3,179 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Xcel Contracting residential remodeling — demo, framing, flooring, HVAC, and full project management in the Treasure Valley, Idaho." />
+  <meta name="description" content="Xcel Contracting commercial services — Treasure Valley, Idaho." />
   <title>Commercial Services | Xcel Contracting</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Full-screen hero photo */
+    .com-hero {
+      width: 100%;
+      height: calc(100vh - 72px); /* fills screen below nav */
+      background-image: url('assets/images/hero-com.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    /* Dark strip below photo */
+    .com-strip {
+      background: #000000;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .com-strip h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .com-strip p {
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+      margin-bottom: 28px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .com-strip-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .com-hero {
+        height: 70vh;
+      }
+      .com-strip-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<!-- UNDER CONSTRUCTION BANNER -->
-<div class="under-construction"><span>🚧</span>This site is currently under construction — check back soon for the full experience!</div>
 
 <!-- NAVIGATION -->
 <nav class="nav">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="assets/images/logo.jpg" alt="Xcel Contracting" />
+      <img src="assets/images/XCEL_transparent.png" alt="Xcel Contracting" />
     </a>
-    <span class="nav-tagline">Serving the Treasure Valley</span>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="entertainment.html">Entertainment</a></li>
       <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- PAGE HERO -->
-<section class="page-hero page-hero-img" style="background-image: url('assets/images/hero-com.png');">
-  <div class="container">
-    <p class="section-label" style="color:#90CAF9;">Full Scope Residential Remodeling</p>
-    <h1>Commercial Services</h1>
-    <p>From demo day to final walkthrough — Xcel manages your entire remodel project with a trusted network of skilled tradespeople and meticulous project oversight.</p>
-  </div>
-</section>
+<!-- FULL-SCREEN HERO PHOTO -->
+<div class="com-hero"></div>
 
-
-<!-- SERVICES GRID -->
-<section class="section-pad" style="background: var(--grey-light);">
-  <div class="container text-center">
-    <p class="section-label">What We Offer</p>
-    <h2 class="section-title">Our Contracting Services</h2>
-    <p class="section-subtitle">We manage every phase of your residential remodel — from first swing of the demo hammer to final coat of paint.</p>
-    <div class="services-detail-grid">
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🔩</div>
-        <h4>Demolition</h4>
-        <p>Safe, efficient, and clean demo work. We remove walls, flooring, cabinets, fixtures, and more — with full debris hauling and site prep for the next phase.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🏗️</div>
-        <h4>Framing</h4>
-        <p>Structural and non-structural framing for room additions, open-concept conversions, accent walls, and entertainment wall build-outs.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🪵</div>
-        <h4>Flooring</h4>
-        <p>Hardwood, LVP, tile, carpet, and laminate installation. We prep the subfloor, install with precision, and finish with clean transitions and trim.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🧱</div>
-        <h4>Drywall &amp; Texture</h4>
-        <p>Full drywall hang, tape, mud, and texture. From smooth walls to knockdown and orange peel — we match your existing texture seamlessly.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🎨</div>
-        <h4>Interior Painting</h4>
-        <p>Professional interior painting with proper prep, clean lines, and long-lasting results. Walls, ceilings, trim, cabinets, and accent walls.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🔧</div>
-        <h4>Trim &amp; Finish Work</h4>
-        <p>Baseboards, crown molding, door casing, window trim, wainscoting, and custom millwork. The details that make a room feel finished.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🌡️</div>
-        <h4>HVAC Coordination</h4>
-        <p>We work with licensed HVAC partners for duct relocation, register moves, and system additions as part of your remodel scope.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">💡</div>
-        <h4>Electrical &amp; Lighting</h4>
-        <p>Coordination of licensed electricians for outlet relocation, recessed lighting, accent lighting, and panel work as needed for your project.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🚿</div>
-        <h4>Bathroom Remodels</h4>
-        <p>Full bath and powder room remodels — tile showers, vanity replacement, flooring, lighting, and fixtures. We manage the whole scope.</p>
-      </div>
-      <div class="service-detail-card">
-        <div class="service-icon" style="font-size:2rem; margin-bottom:12px;">🍳</div>
-        <h4>Kitchen Updates</h4>
-        <p>Backsplash tile, cabinet painting or refacing, countertop coordination, flooring, and trim updates. Kitchen refreshes done right.</p>
-      </div>
-    </div>
+<!-- DARK STRIP WITH CTA -->
+<div class="com-strip">
+  <h2>Equipment Upgraded — Reliability Enabled</h2>
+  <p>Operating in multiple markets throughout the US</p>
+  <div class="com-strip-buttons">
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    <a href="tel:2088707683" class="btn btn-outline">📞 208-870-7683</a>
   </div>
-</section>
-
-<!-- VENDOR NETWORK HIGHLIGHT -->
-<section class="section-pad" style="background: var(--white);">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
-      <div>
-        <img src="assets/images/project-stone-builtin.png" alt="Completed Xcel Contracting project" style="border-radius:8px; box-shadow:var(--shadow); width:100%; object-fit:cover; max-height:420px;" />
-      </div>
-      <div>
-        <p class="section-label">Our Advantage</p>
-        <h2>A Trusted Vendor Network You Can Count On</h2>
-        <p>Over the years, we've built relationships with the best tradespeople in the Treasure Valley. Plumbers, electricians, tile setters, flooring installers, HVAC techs — vetted, reliable, and held to the Xcel standard.</p>
-        <p>When you work with Xcel, you're not hunting down random contractors or hoping they show up. You get a coordinated team managed by one point of contact who cares about the outcome as much as you do.</p>
-        <ul class="service-list">
-          <li>Single point of contact for your entire project</li>
-          <li>Vetted, insured subcontractor network</li>
-          <li>Transparent pricing and project timelines</li>
-          <li>Regular progress updates — no guessing games</li>
-          <li>Clean job site maintained throughout</li>
-          <li>Final walkthrough and quality check before closeout</li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">Let's Talk About Your Project</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS STEPS -->
-<section class="section-pad" style="background: var(--grey-light);">
-  <div class="container text-center">
-    <p class="section-label">Our Process</p>
-    <h2 class="section-title" style="margin-bottom:48px;">How a Remodel Works with Xcel</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-number">1</div>
-        <h4>Consultation &amp; Scope</h4>
-        <p>We meet at your property, assess the project, and define the full scope of work together.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-number">2</div>
-        <h4>Detailed Quote</h4>
-        <p>You receive a clear, itemized estimate — no vague numbers, no surprise add-ons at the end.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-number">3</div>
-        <h4>Scheduling &amp; Crew</h4>
-        <p>We coordinate the right tradespeople for each phase and give you a realistic project timeline.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-number">4</div>
-        <h4>Build &amp; Manage</h4>
-        <p>Xcel oversees every phase of the work, keeping the job site clean and the project on track.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA BAND -->
-<section class="cta-band">
-  <div class="container">
-    <h2>Ready to Start Your Remodel?</h2>
-    <p>Get a free consultation and quote from Xcel Contracting. Serving the Treasure Valley from Payette to Mountain Home.</p>
-    <div class="cta-buttons">
-      <a href="contact.html" class="btn btn-outline">Request a Free Quote</a>
-      <a href="tel:2088707683" class="btn btn-outline">📞 208-870-7683</a>
-    </div>
-  </div>
-</section>
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <p class="footer-tagline">Let Your Entertainment Space <span class="footer-accent">XCEL</span></p>
+
   </div>
 </footer>
 
